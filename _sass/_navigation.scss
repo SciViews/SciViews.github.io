@@ -163,7 +163,7 @@
       overflow-y: auto;
       background-color: $box-color;
       border: $box-border;
-      color: $menu-bg-color; /*lighten($menu-bg-color, 10);*/
+      color: $menu-bg-color;
       left: 0;
       top: 0;
       width: $left-pane;
@@ -176,12 +176,11 @@
       margin-bottom: 30px;
     }
     &:hover {
-      /*background-color: darken($menu-bg-color, 10);*/
       background-color: $menu-bg-color;
       color: $menu-color;
       @include media($large) {
         background-color: darken($menu-color, 10);
-        color: $menu-bg-color; /*lighten($menu-bg-color, 10);*/
+        color: $menu-bg-color;
       }
     }
   }
@@ -205,7 +204,7 @@
     }
   }
   ul ul span {
-    color: lighten($menu-bg-color, 40); /*50*/
+    color: lighten($menu-bg-color, 40);
   }
   ul li:hover > ul {
     @include media($medium) {

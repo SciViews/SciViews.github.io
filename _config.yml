@@ -3,11 +3,13 @@ title: SciViews
 locale: en_US
 description: Open source software for the R language and environment.
 logo: site-title.png
-url: #http://www.sciviews.org
+url: #http://www.sciviews.org # Don't put this for correct behaviour in servr!
 searchurl: http://www.sciviews.org
 search: true
-images: https://dl.dropboxusercontent.com/u/19371999/jekyll
-localimages: ~/Dropbox/Public/jekyll/
+#images: https://dl.dropboxusercontent.com/u/19371999/jekyll
+#localimages: ~/Dropbox/Public/jekyll/
+images: https://github.com/SciViews/SciViews.github.io/blob/master/images2
+localimages: ~/Documents/Pgm/Github/SciViews.github.io/images2
 
 # Define this to use tiles instead of a list in the homepage
 teaser: site-teaser.png
@@ -31,10 +33,11 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..2
   enable_coderay: false
+  #Need to put GFM option for backtick-fenced code blocks
   input: GFM
-  #smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  #hard_wrap: 0 ? Need to set this for more compatibility?
-  #Need to put GMF option for backtick-fenced code blocks
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  #Need to set this for more compatibility
+  hard_wrap: 0
 
 mathjax: true
 

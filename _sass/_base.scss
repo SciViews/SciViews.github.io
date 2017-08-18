@@ -90,7 +90,6 @@ a {
     color: darken($link-color, 20);
   } */
   &:focus {
-    /* outline: thin dotted; */
     color: darken($link-color, 10);
   }
   &:hover,
@@ -222,7 +221,7 @@ pre {
    Global transitions
    ========================================================================== */
 
-/* not i, because it is used for Awesome icon fonts */
+/* Rem: not i, because it is used for Awesome icon fonts */
 b, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, .highlight {
   @include transition(all .2s ease);
 }

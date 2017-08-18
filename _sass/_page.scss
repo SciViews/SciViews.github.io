@@ -55,7 +55,6 @@
   font-weight: 400;	
   a {
     color: $meta-color;
-    /* color: $link-color; */
     @include font-size(12);
     padding: 0 5px;
     &:hover {
@@ -96,7 +95,6 @@ span + .entry-title {
   line-height: 1;
   a {
     color: $menu-bg-color;
-    /*text-decoration: underline;*/
   }
   @include media($medium) {
     @include font-size(30,yes,30);
@@ -257,16 +255,6 @@ span + .entry-title {
     @include media($large) {
       @include span-columns(9.5);
     }
-  }
-  
-  /* nice link underlines */
-  
-  p > a,
-  li > a {
-    /* border-bottom: 1px dotted lighten($link-color, 50);
-    &:hover {
-      border-bottom-style: solid;
-    } */
   }
 }
 
