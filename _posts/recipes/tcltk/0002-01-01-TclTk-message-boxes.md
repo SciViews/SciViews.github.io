@@ -1,19 +1,24 @@
 ---
-layout: post
-title:  "Message boxes in R tcltk"
-excerpt: "Use Tk message boxes in R."
-author: james_and_philippe
-modified: 2017-08-19
-categories: [recipes, tcltk]
-section: "Basic techniques"
-tags: [tcltk, GUI, programming]
+title: "Message boxes in R tcltk"
+author: "james_and_philippe"
+comments: yes
+excerpt: Use Tk message boxes in R.
 image:
+  credit: null
+  creditlink: null
   feature: banner-tcltk.png
-  credit: 
-  creditlink: 
   teaser: banner-tcltk.png
-comments: true
-share: true
+layout: post
+modified: '2017-08-19'
+section: Basic techniques
+share: yes
+tags:
+- tcltk
+- GUI
+- programming
+categories:
+- recipes
+- tcltk
 ---
 
 The following code demonstrates a simple "Hello World" message box.

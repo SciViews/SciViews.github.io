@@ -6,8 +6,6 @@ logo: site-title.png
 url: #http://www.sciviews.org # Don't put this for correct behaviour in servr!
 searchurl: http://www.sciviews.org
 search: true
-#images: https://dl.dropboxusercontent.com/u/19371999/jekyll
-#localimages: ~/Dropbox/Public/jekyll/
 images: http://www.sciviews.org/images2
 localimages: ~/Documents/Pgm/Github/SciViews.github.io/images2
 
