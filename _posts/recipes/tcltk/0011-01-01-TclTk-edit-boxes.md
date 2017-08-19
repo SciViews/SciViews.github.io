@@ -3,7 +3,7 @@ layout: post
 title:  "Edit boxes in R TclTk"
 excerpt: "Single text line input widgets in Tk."
 author: james_and_philippe
-modified: 2015-12-22
+modified: 2017-08-18
 categories: [recipes, tcltk]
 section: "Basic widgets"
 tags: [tcltk, GUI, programming]

@@ -3,7 +3,7 @@ layout: post
 title:  "Message boxes in R tcltk"
 excerpt: "Use Tk message boxes in R."
 author: james_and_philippe
-modified: 2015-12-01
+modified: 2017-08-19
 categories: [recipes, tcltk]
 section: "Basic techniques"
 tags: [tcltk, GUI, programming]

@@ -8,7 +8,7 @@ searchurl: http://www.sciviews.org
 search: true
 #images: https://dl.dropboxusercontent.com/u/19371999/jekyll
 #localimages: ~/Dropbox/Public/jekyll/
-images: https://github.com/SciViews/SciViews.github.io/blob/master/images2
+images: http://www.sciviews.org/images2
 localimages: ~/Documents/Pgm/Github/SciViews.github.io/images2
 
 # Define this to use tiles instead of a list in the homepage
@@ -17,7 +17,7 @@ teaser: site-teaser.png
 # Jekyll configuration
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 
 sass:
   sass_dir: _sass
