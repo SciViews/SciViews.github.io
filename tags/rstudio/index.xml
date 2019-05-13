@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rstudio on SciViews</title>
+    <link>/tags/rstudio/</link>
+    <description>Recent content in Rstudio on SciViews</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 05 May 2019 12:27:35 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SciViews Box</title>
+      <link>/software/svbox/</link>
+      <pubDate>Sun, 05 May 2019 12:27:35 +0100</pubDate>
+      
+      <guid>/software/svbox/</guid>
+      <description>The SciViews Box, or svbox, is an easily installable software environment for reproducible data science with R, Python and Julia.</description>
+    </item>
+    
+  </channel>
+</rss>

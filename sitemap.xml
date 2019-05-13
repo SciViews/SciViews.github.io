@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/blog/2019-05-08-svbox2019/</loc>
+    <lastmod>2019-05-08T11:43:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-05-07T18:19:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/ecos/</loc>
+    <lastmod>2019-05-07T14:48:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2019-05-05-new-site/</loc>
+    <lastmod>2019-05-05T21:13:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/svbox/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/sciviews-r/</loc>
+    <lastmod>2019-05-05T12:15:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/zooimage/</loc>
+    <lastmod>2019-05-05T12:04:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2019-05-04T20:09:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2019-05-04T18:50:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+    <lastmod>2019-05-04T18:19:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/team/</loc>
+    <lastmod>2019-05-04T18:19:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/</loc>
+    <lastmod>2019-05-04T18:19:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/team/philippe-grosjean/</loc>
+    <lastmod>2019-05-04T14:43:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/team/guyliann-engels/</loc>
+    <lastmod>2019-05-04T14:42:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/course/</loc>
+    <lastmod>2019-05-04T08:19:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/article/</loc>
+    <lastmod>2019-05-05T21:13:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-05-05T21:13:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/image-analysis/</loc>
+    <lastmod>2019-05-05T12:04:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/julia/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/jupyter/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2019-05-05T12:04:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/news/</loc>
+    <lastmod>2019-05-05T21:13:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/news/</loc>
+    <lastmod>2019-05-08T11:43:10+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/plankton/</loc>
+    <lastmod>2019-05-05T12:04:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/reproducible-research/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rstudio/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-05-08T11:43:10+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/sciviews-box/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/software/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-05-05T12:04:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tidyverse/</loc>
+    <lastmod>2019-05-05T12:15:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2019-05-08T11:43:10+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/virtual-machine/</loc>
+    <lastmod>2019-05-05T12:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

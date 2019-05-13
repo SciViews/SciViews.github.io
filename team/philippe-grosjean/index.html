@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>SciViews</title>
+
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="description" content="Software for reproducible research with R">
+    
+    <meta name="keywords" content="data science, R, Python, statistics">
+    
+    <meta name="generator" content="Hugo 0.53" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../plugins/bootstrap/bootstrap.min.css ">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="../../plugins/magnific-popup/magnific-popup.css ">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="../../plugins/slick/slick.css ">
+    <link rel="stylesheet" href="../../plugins/slick/slick-theme.css ">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="../../plugins/themify-icons/themify-icons.css ">
+    <!-- animate -->
+    <link rel="stylesheet" href="../../plugins/animate/animate.css ">
+    <!-- Aos -->
+    <link rel="stylesheet" href="../../plugins/aos/aos.css ">
+    <!-- Stylesheets -->
+    <link href="../../css/style.css " rel="stylesheet">
+
+
+    <!-- Highlight -->
+    <link rel="stylesheet" href="../../plugins/highlight/tomorrow.css" id="theme-stylesheet">
+    <script src="../../plugins/highlight/highlight.pack.js"></script>
+    <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+    <!-- MathJax -->
+    
+
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../images/favicon.png " type="image/x-icon">
+    <link rel="icon" href="../../images/favicon.png " type="image/x-icon">
+
+</head>
+
+<body>
+
+
+    <!-- preloader start -->
+    <div class="preloader">
+        <img src="../../images/preloader.gif " alt="preloader">
+    </div>
+    <!-- preloader end -->
+
+
+<!-- navigation -->
+<header>
+    <!-- top header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline text-lg-right text-center">
+                        <li class="list-inline-item">
+                            <a href="mailto:info@sciviews.org">info@sciviews.org</a> 
+                        </li>
+                        <li class="list-inline-item">
+                             <a href="https:/github.com/SciViews">
+                                <i class="ti-github"></i>
+                                <span class="ml-2">github.com/SciViews</span> 
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" id="searchOpen">
+                                <i class="ti-search"></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar -->
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="../../">
+                    <img src="../../images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../"> Home </a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../software">Software</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../blog">Blog</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../course">Course</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Info
+                            </a>
+                            <div class="dropdown-menu" >
+                                
+                                <a class="dropdown-item" href="../../about">About</a>
+                                
+                                <a class="dropdown-item" href="../../team">Team</a>
+                                
+                                <a class="dropdown-item" href="../../contact">Contact</a>
+                                
+                            </div>
+                        </li>
+                        
+                        
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary btn-sm" href="../../software/svbox"> Install svbox </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Search Form -->
+<div class="search-form">
+    <a href="#" class="close" id="searchClose">
+        <i class="ti-close"></i>
+    </a>
+    <div class="container">
+        <form action="https://www.google.com/search" class="row">
+            <div class="col-lg-10 mx-auto">
+                <h3>Search Here</h3>
+                <div class="input-wrapper">
+                    <input type="text" class="form-control" name="q" id="q" placeholder="Enter Keywords..."
+                        required>
+                    <input type="hidden" name="sitesearch" value="https://www.sciviews.org" />
+                    <button>
+                        <i class="ti-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /navigation -->
+
+
+<!-- page title -->
+<section class="page-title overlay" style="background-image: url('/images/background/page-title.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-white font-weight-bold">Philippe Grosjean</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="../../">Home</a>
+                    </li>
+                    <li>Philippe Grosjean</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /page title -->
+
+<!-- team single -->
+<section class="section">
+    <div class="container wide-space">
+        <div class="row">
+            <!-- sidebar -->
+            <aside class="col-lg-4">
+                <!-- team member info -->
+                <div class="bg-gray rounded mb-50">
+                    <img class="img-fluid w-100 rounded-top" src="../../images/team/philippe.jpg" alt="team member">
+                    <div class="py-2 px-4 pb-3">
+                        
+                        <div class="py-3 border-bottom">
+                            <p class="d-inline-block font-primary m-0">
+                                <i class="mr-2 ti-flag-alt"></i>Experience Of</p>
+                            <span class="font-weight-bold text-dark float-right">24 Years</span>
+                        </div>
+                        <div class="py-3">
+                            <p class="d-inline-block font-primary m-0">
+                                <i class="mr-2 ti-location-pin"></i>From</p>
+                            <span class="font-weight-bold text-dark float-right">Brussels, Belgium</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Link to main website -->
+                <div class="rounded border py-3 px-4 mb-50">
+                    <i class="d-inline-block mr-1 text-dark ti-user" style="font-size: 20px;"></i>
+                    <h4 class="mb-1 d-inline-block">Main homepage</h4>
+                    <a class="font-secondary text-color d-block ml-4" href="http://phgrosjean.sciviews.org">phgrosjean.sciviews.org</a>
+                </div>
+            </aside>
+            <!-- /sidebar -->
+
+            <!-- team member details -->
+            <div class="col-lg-8">
+                <div>
+                    <h2>Philippe Grosjean</h2>
+                    <h6 class="text-primary mb-30">Professor</h6>
+                    <p class="mb-40">I am a professor of marine ecology and data sciences at the University of Mons (UMONS), Belgium. My research interests include coral ecophysiology, artificial reef mesocosms, automatic identification of plankton images, growth models, machine learning algorithms, evolution and ecology of open source software. I lead the Numerical Ecology of Aquatic Systems unit, which studies coral and plankton, and develops software for the ecologist. I teach the whole curriculum of data sciences to students in biology at the Faculty of Science at UMONS where we emphasize the importance of good practice for reproducible research and open science. I am also in charge of the courses in marine ecology, ecophysiology, oceanography, and aquariology at UMONS.</p>
+                    <div class="row">
+                        <!-- contact info -->
+                        <div class="col-md-6">
+                            <h4>Contact Information</h4>
+                            <ul class="pl-0 mb-40">
+                                <li class="font-secondary text-color my-3 custom-list">
+                                    <i class="mr-3 ti-mobile"></i>&#43;32 65 37 34 97
+                                </li>
+                                <li class="font-secondary text-color my-3 custom-list">
+                                    <i class="mr-3 ti-email"></i>phgrosjean@sciviews.org</li>
+                                <li class="font-secondary text-color my-3 custom-list">
+                                    <i class="mr-3 ti-location-pin"></i>Mons, Belgium.</li>
+                            </ul>
+                        </div>
+                        <!-- social icon -->
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <h4 class="mb-20">Follow on Social</h4>
+                            <ul class="list-inline">
+                                <li class="list-inline-item mr-2 custom-list">
+                                    <a class="social-icon-lg bg-github" href="https://github.com/phgrosjean">
+                                        <i class="ti-github"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2 custom-list">
+                                    <a class="social-icon-lg bg-twitter" href="https://twitter.com/PhilGrosjean">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2 custom-list">
+                                    <a class="social-icon-lg bg-linkedin" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                        <i class="ti-linkedin"></i>
+                                    </a>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+<h4 id="profile">Profile</h4>
+
+<p>I am in charge of the conception and development of the various SciViews software. My contributions in term of documentation and especially, user support are more limited.</p>
+
+                </div>
+                <div class="progressbar">
+                    <h5 class="progressbar-title">Coding</h5>
+                    <div class="progress" data-percent="95%">
+                        <div class="progress-bar progress-bar-striped" style="width: 95%;">
+                            <div class="progress-bar-value">95%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar">
+                    <h5 class="progressbar-title">Documentation</h5>
+                    <div class="progress" data-percent="70%">
+                        <div class="progress-bar progress-bar-striped" style="width: 70%;">
+                            <div class="progress-bar-value">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar">
+                    <h5 class="progressbar-title">User support</h5>
+                    <div class="progress" data-percent="20%">
+                        <div class="progress-bar progress-bar-striped" style="width: 20%;">
+                            <div class="progress-bar-value">20%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /team single -->
+
+
+<!-- footer -->
+<footer class="bg-secondary">
+    <div class="py-100 border-bottom" style="border-color: #454547 !important">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="mb-5 mb-md-0 text-center text-md-left">
+                        <!-- logo -->
+                        <img class="mb-30" src="../../images/logo-footer.png" alt="logo">
+                        <p class="text-white mb-30"> We build software for reproducible research with R</p> 
+                        <!-- social icon -->
+                        <ul class="list-inline">
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://github.com/SciViews">
+                                    <i class="ti-github"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://twitter.com/PhilGrosjean">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                    <i class="ti-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer links -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h4 class="text-white mb-4">Related</h4>
+                    <ul class="footer-links">
+                        
+                        <li>
+                            <a href="http://econum.umons.ac.be">Our Lab</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://web.umons.ac.be/fs/en/">Our Faculty</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://web.umons.ac.be/complexys/en/">Complexys</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://web.umons.ac.be/infortech/en/">InforTech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://web.umons.ac.be/en/">UMONS</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- footer links -->
+                <div class="col-lg-2 col-md-4 col-6">
+                     <h4 class="text-white mb-4">Quick Link</h4>
+                    <ul class="footer-links">
+                        
+                        <li>
+                            <a href="../../software/svbox">SciViews Box</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../software/sciviews-r">SciViews::R</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../software/zooimage">Zoo/PhytoImage</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../blog">Blog</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../about">About</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- subscribe form -->
+                <div class="col-lg-3 col-md-12 offset-lg-1">
+                    <div class="mt-5 mt-lg-0 text-center text-md-left">
+                             <h4 class="mb-4 text-white">Contact Us</h4> 
+                             <p class="text-white mb-4">Need more info?<br/><a href="mailto:info@sciviews.org"><span class="text-primary">Leave us a mail...</span></a></p> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="pt-4 pb-3 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5">
+                    <p class="text-white text-center text-md-left">
+                        <span class="text-primary">SciViews</span> &copy; 2019 All Right Reserved</p> 
+                </div>
+                <div class="col-lg-6 col-md-7">
+                    <ul class="list-inline text-center text-md-right">
+                        
+                        <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+                            <a class="font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- back to top -->
+        <button class="back-to-top">
+            <i class="ti-angle-up"></i>
+        </button>
+    </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="../../plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="../../plugins/bootstrap/bootstrap.min.js"></script>
+<!-- magnific popup -->
+<script src="../../plugins/magnific-popup/jquery.magnific.popup.min.js"></script>
+<!-- slick slider -->
+<script src="../../plugins/slick/slick.min.js"></script>
+<!-- mixitup filter -->
+<script src="../../plugins/mixitup/mixitup.min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+<script src="../../plugins/google-map/gmap.js"></script>
+<!-- Syo Timer -->
+<script src="../../plugins/syotimer/jquery.syotimer.js"></script>
+<!-- aos -->
+<script src="../../plugins/aos/aos.js"></script>
+<!-- Main Script -->
+<script src="../../js/script.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-139912016-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>SciViews</title>
+
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="description" content="Software for reproducible research with R">
+    
+    <meta name="keywords" content="data science, R, Python, statistics">
+    
+    <meta name="generator" content="Hugo 0.53" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../plugins/bootstrap/bootstrap.min.css ">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="../../plugins/magnific-popup/magnific-popup.css ">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="../../plugins/slick/slick.css ">
+    <link rel="stylesheet" href="../../plugins/slick/slick-theme.css ">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="../../plugins/themify-icons/themify-icons.css ">
+    <!-- animate -->
+    <link rel="stylesheet" href="../../plugins/animate/animate.css ">
+    <!-- Aos -->
+    <link rel="stylesheet" href="../../plugins/aos/aos.css ">
+    <!-- Stylesheets -->
+    <link href="../../css/style.css " rel="stylesheet">
+
+
+    <!-- Highlight -->
+    <link rel="stylesheet" href="../../plugins/highlight/tomorrow.css" id="theme-stylesheet">
+    <script src="../../plugins/highlight/highlight.pack.js"></script>
+    <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+    <!-- MathJax -->
+    
+    <script src="../../js/math-code.js"></script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../images/favicon.png " type="image/x-icon">
+    <link rel="icon" href="../../images/favicon.png " type="image/x-icon">
+
+</head>
+
+<body>
+
+
+    <!-- preloader start -->
+    <div class="preloader">
+        <img src="../../images/preloader.gif " alt="preloader">
+    </div>
+    <!-- preloader end -->
+
+
+<!-- navigation -->
+<header>
+    <!-- top header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline text-lg-right text-center">
+                        <li class="list-inline-item">
+                            <a href="mailto:info@sciviews.org">info@sciviews.org</a> 
+                        </li>
+                        <li class="list-inline-item">
+                             <a href="https:/github.com/SciViews">
+                                <i class="ti-github"></i>
+                                <span class="ml-2">github.com/SciViews</span> 
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" id="searchOpen">
+                                <i class="ti-search"></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar -->
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="../../">
+                    <img src="../../images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../"> Home </a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../software">Software</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../blog">Blog</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../course">Course</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Info
+                            </a>
+                            <div class="dropdown-menu" >
+                                
+                                <a class="dropdown-item" href="../../about">About</a>
+                                
+                                <a class="dropdown-item" href="../../team">Team</a>
+                                
+                                <a class="dropdown-item" href="../../contact">Contact</a>
+                                
+                            </div>
+                        </li>
+                        
+                        
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary btn-sm" href="../../software/svbox"> Install svbox </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Search Form -->
+<div class="search-form">
+    <a href="#" class="close" id="searchClose">
+        <i class="ti-close"></i>
+    </a>
+    <div class="container">
+        <form action="https://www.google.com/search" class="row">
+            <div class="col-lg-10 mx-auto">
+                <h3>Search Here</h3>
+                <div class="input-wrapper">
+                    <input type="text" class="form-control" name="q" id="q" placeholder="Enter Keywords..."
+                        required>
+                    <input type="hidden" name="sitesearch" value="https://www.sciviews.org" />
+                    <button>
+                        <i class="ti-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /navigation -->
+
+
+<!-- page title -->
+<section class="page-title overlay" style="background-image: url('/images/background/page-title.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-white font-weight-bold">SciViews New Site</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="../../">Home</a>
+                    </li>
+                    <li>SciViews New Site</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /page title -->
+
+<!-- blog single -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 py-100">
+                <div class="border rounded bg-white">
+                    <img class="img-fluid w-100 rounded-top" src="../../images/blog/website.png" alt="blog-image">
+                    <div class="p-4">
+                        <h3>SciViews New Site</h3>
+                        <ul class="list-inline d-block pb-4 border-bottom mb-3">
+                            <li class="list-inline-item text-color">Posted By Philippe Grosjean</li>
+                            <li class="list-inline-item text-color">On 05 May</li>
+                            <li class="list-inline-item text-color">Tag: [News]</li>
+                        </ul>
+                        <div class="post-content">
+                            
+
+
+<div id="abstract" class="section level3 unnumbered">
+<h3>Abstract</h3>
+<!-- Note that using {-} after a header prevents it to be numbered -->
+<div class="abstract">
+<p>The SciViews web site is completely refactored.</p>
+<p>This page shows how <em>posts</em> are presented with the new skin.</p>
+</div>
+<hr />
+<p>Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents (among other possible formats). For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>. This version supports YAML header starting and ending with three dashes (<code>---</code>). It also includes improvements for scientific documents (figures and tables numbering and reference, equations and equations numbering, citations and bibliographic references, …)</p>
+<p><em><strong>Here are the various R Markdown features you can use:</strong></em></p>
+</div>
+<div id="headers" class="section level3 unnumbered">
+<h3>Headers</h3>
+<ul>
+<li>Header with 6 levels, either with <code>#</code>, or with underline:</li>
+</ul>
+</div>
+<div id="header-1" class="section level1">
+<h1>Header 1</h1>
+<p>Some text…</p>
+<div id="header-2" class="section level2">
+<h2>Header 2</h2>
+<p>Some text…</p>
+<div id="header-3" class="section level3">
+<h3>Header 3</h3>
+<p>Some text…</p>
+<div id="header-4" class="section level4">
+<h4>Header 4</h4>
+<p>Some text…</p>
+<div id="header-5" class="section level5">
+<h5>Header 5</h5>
+<p>Some text…</p>
+<div id="header-6" class="section level6">
+<h6>Header 6</h6>
+<p>Some text…</p>
+<p>An alternate syntax for headers:</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="header-1-1" class="section level1">
+<h1>Header 1</h1>
+<div id="header-2-1" class="section level2">
+<h2>Header 2</h2>
+</div>
+<div id="headers-can-contain-formatting-and-links" class="section level2">
+<h2>Headers can <em>contain</em> forma<sup>tting</sup> and <a href="http://www.sciviews.org">links</a></h2>
+<p><strong>Take care that a blank line is <em>required</em> before headers as
+#22 this could too easily be interpretted as a header otherwise.</strong></p>
+<ul>
+<li>One can put identifiers after header, to allow <a href="#myheader">linking to them</a> elsewhere. Otherwise, headers are autoidentified by a special kind of reformatting of the string. Note also that references to headers can also be implicit. That is, <code>[linking to a header]</code>, or <code>[linking to a header][]</code> should work too: this is a link to the <a href="#abstract">abstract</a>.</li>
+</ul>
+<div id="myheader" class="section level4">
+<h4>An identified header</h4>
+<ul>
+<li>One can force unnumbered titles using <code>{-}</code> or <code>{.unnumbered}</code> (providing, of course, that the other headers are numbered).</li>
+</ul>
+</div>
+<div id="basic-text-formatting" class="section level3">
+<h3>Basic text formatting</h3>
+<ul>
+<li><p>Bold using <strong>bold</strong> or <strong>bold</strong></p></li>
+<li><p>Italic using <em>italic</em> or <em>italic</em>, but intra_word_underscore is not interpreted (use stars for that like in this w<em>or</em>d)</p></li>
+<li><p>Super<sup>script</sup>, or sub<sub>script</sub>. No space can occur inside super- or subscript. If you need it, backslash-escape the space like P<sub>a cat</sub>.</p></li>
+<li><p>Strikethrough with <del>this formatting</del>.</p></li>
+<li><p>Formattings can be combined of course, like <strong><em>bold italic with super<sup>script</sup></em></strong>.</p></li>
+<li><p>Inline code like <code>x &lt;- 1</code>, and if you need backquote inside it <code>`@var` &lt;- 2</code>.</p></li>
+<li><p>Links are automatically detected like <a href="http://example.com" class="uri">http://example.com</a>, or can be explicitly indicated (with a different text) like <a href="http://example.com">some example</a>. <em>Note that Markdown uses also <a href="#reflinks">reference links</a></em>. You can also put your links between angle brackets <a href="http://example.com" class="uri">http://example.com</a>.</p></li>
+<li><p>You can use any UTF-8 character (at least for HTML documents (examples: µm, Ω, Æ, ∫√)…</p></li>
+<li><p>You need to backshlash-escape punctuation you don’t want to be interpreted ad formatting code, like *foo*.</p></li>
+<li><p>A nonbreaking space is simply an escaped space, like between “Fig.” and “3” here: Fig. 3.</p></li>
+<li><p>A few sequences of characters produce special characters. Use of –dashes– and —em-dashes—. Three dots is ellipsis… and I can use any unicode, too, for special characters, like 😌.</p></li>
+</ul>
+</div>
+<div id="special-paragraphs-and-other-items" class="section level3">
+<h3>Special paragraphs and other items</h3>
+<ul>
+<li>Quoted text (need blank line before it to avoid misinterpretation of
+&gt; inside a paragraph)</li>
+</ul>
+<blockquote>
+<p>Some quoted text</p>
+</blockquote>
+<blockquote>
+<p>With two paragraph…</p>
+</blockquote>
+<blockquote>
+<p>More quoted
+<br/>with a second paragraph within the same quote block.</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>And double quotation</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>with two paragraphs…</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Line blocks</li>
+</ul>
+<div class="line-block">This is line block<br />
+It respect text position<br />
+  Like here and you can go to the line<br />
+And a new line here</div>
+<ul>
+<li><p>Preformatted text:</p>
+<p>Some preformatted text
+using indentation</p></li>
+<li><p>Preformatted or verbatim sections indented with four spaces of fenced (but only fenced blocks work in lists and are thus the preferred mean to do so). Fenced blocks are delimited by three or more tildes (<code>~</code>) or backticks (<code>`</code>) and they must be separated from the surrounding using blank lines. You can use identifiers too like in <a href="#mycode">this block</a>:</p></li>
+</ul>
+<pre><code>Some preformatted text (like for code blocks)
+using a fenced block with backticks</code></pre>
+<p>It is very easy to indicate a language, and syntax highlighting will be used for it:</p>
+<pre class="r"><code># Idem, but with R syntax highlighting
+for (i in 1:100) {
+  if (i &gt; 1) stop(&quot;Got it!&quot;)
+}</code></pre>
+<p>It can also be specified in a more complex way, and with marks allowing to link to it:</p>
+<pre id="mycode" class="python"><code>name = raw_input(&#39;What is your name?\n&#39;)
+print &#39;Hi, %s.&#39; % name</code></pre>
+<p>Then you can link to it <a href="#mycode">like here</a>.</p>
+<ul>
+<li>Horizontal rule or page break using four or more <code>*</code>, <code>-</code> or <code>_</code> optionally separated by spaces</li>
+</ul>
+<hr />
+<hr />
+<hr />
+<ul>
+<li><p>Line breaks when ending with two or more spaces<br />
+like this paragraph. However, this is not very visible, nor usable in table. So you can also use a backslash followed by a newline<br />
+and this approach is the only way to do it in tables!</p></li>
+<li><p>You can escape special characters except in code block or inline code if you don’t want them to be interpreted as formatting marks like _here_.</p></li>
+<li><p>Non-breaking space is entered as a backslash-escaped space (<code>\</code>).</p></li>
+<li><p>Comment that do not appear in the final document are similar to HTML comments (<code>&lt;!-- comment--&gt;</code>), but can also be entered using the <code>[//]:</code> syntax.
+<!-- this is a comment and should not be present in the final document --></p></li>
+</ul>
+<ul>
+<li><p>Smart punctuation is used and converts straight quotes into curly ones like ‘here’ or “here”. It will also interpret <code>--</code> as en-dash –, <code>---</code> as em-dash —, and <code>...</code> as ellipses … Moreover, nonbreaking spaces are automatically used after certain items like Mr. Schmidt.</p></li>
+<li><p>Note that raw HTML (with or without interpretation of markdown inside it) can be included too.</p></li>
+<li><p>Footnotes<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> are easy to insert. Another example<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. And here, I use an inline footnote<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p></li>
+</ul>
+<p>Text after the long note…</p>
+</div>
+<div id="lists" class="section level3">
+<h3>Lists</h3>
+<ul>
+<li>Unordered list (using <code>*</code>, <code>+</code> or <code>-</code>)
+<ul>
+<li>Second level</li>
+</ul></li>
+<li>Compact</li>
+<li>list</li>
+<li><p>of items</p></li>
+<li><p>Loose</p></li>
+<li><p>list</p></li>
+<li><p>of items</p></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Ordered list
+<ol style="list-style-type: lower-alpha">
+<li>Second level</li>
+<li>Second level, second item</li>
+</ol></li>
+<li>Back to first level</li>
+<li><p>There is a mechanism to include paragraphs inside the list using indentation (don’t forget the empty line in between to start a new paragraph):</p>
+<pre><code>Some preformatted inside a list item</code></pre></li>
+<li><p>Fourth item</p></li>
+</ol>
+<ul>
+<li>The fancy list extension allow for using <code>#.</code> for ordered lists, as well as something like <code>1)</code>, or <code>(I)</code> for instance:</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>First item</li>
+<li>Second item</li>
+</ol>
+<ol style="list-style-type: upper-roman">
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ol>
+<ul>
+<li>Definition lists are also supported (definitions must start with <code>:</code> or <code>~</code>) and blank lines are optional between the term and its definition (loose <em>vs</em> compact form), but not before the term. Finally, several defintions are allowed for the same term.</li>
+</ul>
+<dl>
+<dt>Term 1</dt>
+<dd><p>Definition 1</p>
+</dd>
+<dt>Term 2 with <em>inline markup</em></dt>
+<dd><p>Definition 2</p>
+<pre><code>{ some code, part of Definition 2 }</code></pre>
+<p>Third paragraph of definition 2.</p>
+</dd>
+</dl>
+<p>or</p>
+<dl>
+<dt>Term 1</dt>
+<dd>Definition 1
+</dd>
+<dt>Term 2</dt>
+<dd>Definition 2a
+</dd>
+<dd>Definition 2b
+</dd>
+</dl>
+<ul>
+<li>Numbered example lists use a sequential numbering throughout the whole document and use the <code>@.</code> syntax:</li>
+</ul>
+<ol class="example" style="list-style-type: decimal">
+<li>First item</li>
+<li>Second item</li>
+</ol>
+<p>Some text</p>
+<ol start="3" class="example" style="list-style-type: decimal">
+<li>Third item</li>
+</ol>
+<p>You can give them labels (alphanumeric + character + hyphen) and refer to them later on. You can also enclose it into parentheses, but it does not change how it is displayed:</p>
+<ol start="4" class="example" style="list-style-type: decimal">
+<li><a name="good"></a>This is a good example</li>
+</ol>
+<p>As <a href="#good">example</a> 4 illustrates<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, …</p>
+<p>And what if I refer to it before the label like 5? Yes! It works! But unfortunately, there is no link to <a href="#notgood">example</a> 5.</p>
+<ol start="5" class="example" style="list-style-type: decimal">
+<li>A bad example</li>
+</ol>
+<p>Finally, to force ending a list, just add a comment where you want to end it (same trick applies for restarting another numbered list):</p>
+<ol style="list-style-type: decimal">
+<li>list item</li>
+<li><p>another item</p>
+<p>Formatted block with spaces does not work inside lists</p></li>
+<li><p>third list item</p></li>
+</ol>
+<!-- end of list -->
+<pre><code>Formatted block with spaces work now</code></pre>
+<ol style="list-style-type: decimal">
+<li>New list item #1</li>
+</ol>
+<p>Indent paragraphs or blocks or chunks (see hereunder) following a list item to include it in the list:</p>
+<ol style="list-style-type: decimal">
+<li><p>The area of a circle with a given radius is:</p>
+<pre class="r"><code>radius &lt;- 3.5
+pi * radius ^ 2</code></pre>
+<pre class="chunk-output"><code>## [1] 38.48451</code></pre></li>
+<li><p>As you can see, the R chunk and its associated results are included in the list element!</p></li>
+</ol>
+</div>
+</div>
+<div id="images" class="section level2">
+<h2>Images</h2>
+<ul>
+<li>To insert images in your document, you use:</li>
+</ul>
+<div class="figure">
+<img src="../../figures/markdown_cat.jpg" alt="A nice little cat." />
+<p class="caption">A nice little cat.</p>
+</div>
+<!-- Of course, you can also link to an image on the Internet: -->
+<div class="figure">
+<img src="https://www.r-project.org/logo/Rlogo.png" alt="The official R logo." />
+<p class="caption">The official R logo.</p>
+</div>
+<p>An inline image: <img src="../../figures/svbox.png" alt="A small SciViews Box logo." />. Note here that when an image appears alone in its line, it is interpreted as a figure (possibly with caption), and otherwise, it is interpeted as an inline image.</p>
+</div>
+<div id="reflinks" class="section level2">
+<h2>Reference links</h2>
+<ul>
+<li>Reference links are done this way <a href="http://example.com" title="Title">a linked part</a>, or for images:
+<a href="http://www.sciviews.org"><img src="../../figures/svbox.png" title="Figure title" alt="alt text" /></a></li>
+</ul>
+</div>
+<div id="hugo-shortcodes" class="section level2">
+<h2>Hugo shortcodes</h2>
+<ul>
+<li>Tweeter. In R Markdown, you should not use the <code>{{&lt; tweet 936232450006704128 &gt;}}</code> syntax. Instead, you should use:</li>
+</ul>
+<pre class="r"><code>blogdown::shortcode(&#39;tweet&#39;, &#39;936232450006704128&#39;)</code></pre>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited about the new R Release? <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a><br>😋🎋 Welcome &quot;Kite-Eating Tree&quot;!<br>🙌🎥 gif courtesy of <a href="https://twitter.com/pdalgd?ref_src=twsrc%5Etfw">@pdalgd</a>!<br>🤔👇 Curious about the other R release name origins? Check out our post!<br>🔗 <a href="https://t.co/b7XkQKwHpM">https://t.co/b7XkQKwHpM</a> <a href="https://t.co/J1UNks276A">pic.twitter.com/J1UNks276A</a></p>&mdash; 𝓛𝓾𝓬𝔂::postdoc🌻 (@LucyStats) <a href="https://twitter.com/LucyStats/status/936232450006704128?ref_src=twsrc%5Etfw">November 30, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ul>
+<li>Youtube:</li>
+</ul>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ul>
+<li>Vimeo:</li>
+</ul>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ </div>
+
+<ul>
+<li>Github Gist:</li>
+</ul>
+<script type="application/javascript" src="//gist.github.com/phgrosjean/f1d53c0dc1124522b2138033188497d0.js"></script>
+<ul>
+<li>Instagram:</li>
+</ul>
+
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BWNjjyYFxVx/" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BWNjjyYFxVx/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BWNjjyYFxVx/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Bjørn Erik Pedersen (@bepsays)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-07-06T16:27:46+00:00">Jul 6, 2017 at 9:27am PDT</time></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<p>Figure:</p>
+<figure>
+    <img src="../../figures/markdown_cat.jpg"
+         alt="A nice little cat"/> 
+</figure>
+
+</div>
+<div id="tables" class="section level2">
+<h2>Tables</h2>
+<p>There are several ways to present tables.</p>
+<ul>
+<li>Simple tables are easy to create. Header and rows must be on two lines, and column alignment is determined according to the position of the header relative to the line under it. Tables must be surrounded by empty lines and an optional caption may be added above or below the table, starting with <code>Table:</code> or <code>:</code> (which is stripped off).</li>
+</ul>
+<table>
+<caption>Demonstration of a simple table with caption.</caption>
+<thead>
+<tr class="header">
+<th align="right">Right</th>
+<th align="left">Left</th>
+<th align="center">Center</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">12</td>
+<td align="center">12</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td align="right">123</td>
+<td align="left">123</td>
+<td align="center"><strong>123</strong></td>
+<td>123</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="center">1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The header may be omitted, but then, the ending line is mandatory.</li>
+</ul>
+<table>
+<caption>A table without header.</caption>
+<tbody>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">12</td>
+<td align="center">12</td>
+<td align="right">12</td>
+</tr>
+<tr class="even">
+<td align="right">123</td>
+<td align="left">123</td>
+<td align="center">123</td>
+<td align="right">123</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="center">1</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Multiline tables start and end with a line of dashes. Cells are separated by spaces (in case of a single row table, add the empty line too, otherwise, the table is interpreted as a sinlge-line table). In multiline tables, the writer tries to respect the relative size of the columns that appear in the markdown document.</li>
+</ul>
+<table style="width:86%;">
+<caption>A multiline table.</caption>
+<colgroup>
+<col width="16%" />
+<col width="11%" />
+<col width="22%" />
+<col width="36%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Centered
+Header</th>
+<th>Default
+Aligned</th>
+<th align="right">Right
+Aligned</th>
+<th align="left">Left
+Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">First</td>
+<td>row</td>
+<td align="right">12.0</td>
+<td align="left">* Example of a row that
+spans multiple lines.</td>
+</tr>
+<tr class="even">
+<td align="center">Second</td>
+<td>row</td>
+<td align="right">5.0</td>
+<td align="left">* Here’s another one. Note
+the blank line between
+rows.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Headers can be omitted too in multiline tables (note that this could be used as a simple formatting hack to place –short– material on several columns!):</li>
+</ul>
+<table style="width:86%;">
+<caption>Here’s a multiline table without headers.</caption>
+<colgroup>
+<col width="16%" />
+<col width="11%" />
+<col width="22%" />
+<col width="36%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center">First</td>
+<td align="left">row</td>
+<td align="right">12.0</td>
+<td align="left">Example of a row that
+spans multiple lines.</td>
+</tr>
+<tr class="even">
+<td align="center">Second</td>
+<td align="left">row</td>
+<td align="right">5.0</td>
+<td align="left">Here’s another one. Note
+the blank line between
+rows.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Grid tables (rows with <code>=</code> separate headers and can be omitted for headerless tables). Apparently, more formatting is allowed in gridded tables, like list items:</li>
+</ul>
+<table style="width:74%;">
+<caption>Sample grid table.</caption>
+<colgroup>
+<col width="22%" />
+<col width="22%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fruit</th>
+<th>Price</th>
+<th>Advantages</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bananas</td>
+<td>$1.34</td>
+<td><ul>
+<li>built-in wrapper</li>
+<li>bright color</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Oranges</td>
+<td>$2.10</td>
+<td><ul>
+<li>cures scurvy</li>
+<li>tasty</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Pipe tables look like this (beginning and end pipes are optional, and optional colon indicates alignment, header can be omitted but not the lines, and finally, although ugly, pipe do not need to align). Note that table characters like <code>|</code> cannot appear in the table and this form does not support multiline tables. The semicolumn <code>:</code>may be used to indicate alignment inside each column, but it is an optional feature.</li>
+</ul>
+<table>
+<caption>A typical pipe table.</caption>
+<thead>
+<tr class="header">
+<th align="right">Right</th>
+<th align="left">Left</th>
+<th>Default</th>
+<th align="center">Center</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">12</td>
+<td>12</td>
+<td align="center">12</td>
+</tr>
+<tr class="even">
+<td align="right">123</td>
+<td align="left">123</td>
+<td>123</td>
+<td align="center">123</td>
+</tr>
+<tr class="odd">
+<td align="right">* 1</td>
+<td align="left">1</td>
+<td>1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<div id="equations" class="section level3">
+<h3>Equations</h3>
+<ul>
+<li><p>Inline equations like <span class="math inline">\(\frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta\)</span>, or <span class="math inline">\(f(\alpha, \beta) \propto x^{\alpha-1}(1-x)^{\beta-1}\)</span>.</p></li>
+<li><p>Display equation</p></li>
+</ul>
+<p><span class="math display">\[ \frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta \]</span></p>
+<p>Here is a more complex example spanning on several lines:</p>
+<p><span class="math display">\[ \begin{aligned}
+\dot{x} &amp; = \sigma(y-x) \\
+\dot{y} &amp; = \rho x - y - xz \\
+\dot{z} &amp; = -\beta z + xy
+\end{aligned}\]</span></p>
+<p>If you feel difficult to write LaTeX equations, there are inline LateX equation editors like <a href="http://www.sciweavers.org/free-online-latex-equation-editor">this one</a>, and you don’t need to install anything on your computer to used them. Also, there is a R Studio addin provided with the <code>bookdown</code> R package to ease entering LaTeX equations in your R Markdown document.</p>
+</div>
+</div>
+<div id="knitr-chunks" class="section level2">
+<h2>Knitr chunks</h2>
+<p>The R package <code>knitr</code> is used to insert R code withing your Markdown document, which makes altogether an R Markdown document, usually with the <code>.Rmd</code> extension. Go to <strong>knitr</strong> <a href="http://yihui.name/knitr">homepage</a> for more details.</p>
+<div id="r-chunks" class="section level3">
+<h3>R chunks</h3>
+<ul>
+<li>A few R commands:</li>
+</ul>
+<pre class="r"><code># This is a comment (don&#39;t use ##, since it is reserved for output!)
+a &lt;- 1 + 1 # Another comment
+TRUE; NA; &quot;Some text&quot;</code></pre>
+<pre class="chunk-output"><code>## [1] TRUE</code></pre>
+<pre class="chunk-output"><code>## [1] NA</code></pre>
+<pre class="chunk-output"><code>## [1] &quot;Some text&quot;</code></pre>
+<pre class="r"><code>summary(cars) # A table</code></pre>
+<pre class="chunk-output"><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<ul>
+<li>Normal output <em>versus</em> message <em>versus</em> warning <em>versus</em> error:</li>
+</ul>
+<pre class="r"><code># Normal output
+cat(&quot;Some text...\n&quot;)</code></pre>
+<pre class="chunk-output"><code>## Some text...</code></pre>
+<pre class="r"><code># A message
+message(&quot;My very nice message&quot;)</code></pre>
+<pre class="chunk-message"><code>## My very nice message</code></pre>
+<pre class="r"><code># Output with a warning
+1:2 + 1:3</code></pre>
+<pre class="chunk-warning"><code>## Warning in 1:2 + 1:3: longer object length is not a multiple of shorter
+## object length</code></pre>
+<pre class="chunk-output"><code>## [1] 2 4 4</code></pre>
+<pre class="r"><code># An error
+non_existing_object</code></pre>
+<pre class="chunk-error"><code>## Error in eval(expr, envir, enclos): object &#39;non_existing_object&#39; not found</code></pre>
+<ul>
+<li>R chunk with option to generate a plot<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>:</li>
+</ul>
+<div class="figure"><span id="fig:plot-cars"></span>
+<img src="../../blog/2019-05-05-new-site_files/figure-html/plot-cars-1.png" alt="An example figure generated by R, from the `cars` dataset." width="672" />
+<p class="caption">
+Figure 1: An example figure generated by R, from the <code>cars</code> dataset.
+</p>
+</div>
+<p>My plot is <a href="#fig:plot-cars">here</a>.</p>
+<ul>
+<li>Another plot:</li>
+</ul>
+<pre class="r"><code>library(ggplot2)
+qplot(speed, dist, data = cars) + geom_smooth(method = &quot;loess&quot;)</code></pre>
+<div class="figure"><span id="fig:plot-cars2"></span>
+<img src="../../blog/2019-05-05-new-site_files/figure-html/plot-cars2-1.png" alt="Distance in function of speed for the `cars` data set." width="480" />
+<p class="caption">
+Figure 2: Distance in function of speed for the <code>cars</code> data set.
+</p>
+</div>
+<p>I can now reference this figure in the text (see <a href="#fig:plot-cars2">this plot</a>).</p>
+<ul>
+<li>R chunk with option to generate a table :</li>
+</ul>
+<table>
+<caption><span id="tab:table-iris">Table 1: </span>The first few lines of the <code>iris</code> data set.</caption>
+<thead>
+<tr class="header">
+<th align="right">Sepal.Length</th>
+<th align="right">Sepal.Width</th>
+<th align="right">Petal.Length</th>
+<th align="right">Petal.Width</th>
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">5.1</td>
+<td align="right">3.5</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.9</td>
+<td align="right">3.0</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.7</td>
+<td align="right">3.2</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.6</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.0</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.4</td>
+<td align="right">3.9</td>
+<td align="right">1.7</td>
+<td align="right">0.4</td>
+<td align="left">setosa</td>
+</tr>
+</tbody>
+</table>
+<p>Now, I can refer to this table (see <a href="#tab:table-iris">this Table</a>).</p>
+</div>
+<div id="tables-using-xtable" class="section level3">
+<h3>Tables using <code>xtable</code></h3>
+<p>The <code>xtable</code> R package offers an alternative to output well-formatted tables in an R Markdown document:</p>
+<pre class="r"><code>library(xtable)
+data(tli)
+## Demonstrate data.frame... can also export many objects!
+tli.table &lt;- xtable(tli[1:10, ])
+digits(tli.table)[c(2, 6)] &lt;- 0
+## Choose one of these!
+print(tli.table, floating = FALSE, type = &quot;html&quot;)</code></pre>
+<!-- html table generated in R 3.4.4 by xtable 1.8-3 package -->
+<!-- Mon May 13 16:58:24 2019 -->
+<table border="1">
+<tr>
+<th>
+</th>
+<th>
+grade
+</th>
+<th>
+sex
+</th>
+<th>
+disadvg
+</th>
+<th>
+ethnicty
+</th>
+<th>
+tlimth
+</th>
+</tr>
+<tr>
+<td align="right">
+1
+</td>
+<td align="right">
+6
+</td>
+<td>
+M
+</td>
+<td>
+YES
+</td>
+<td>
+HISPANIC
+</td>
+<td align="right">
+43
+</td>
+</tr>
+<tr>
+<td align="right">
+2
+</td>
+<td align="right">
+7
+</td>
+<td>
+M
+</td>
+<td>
+NO
+</td>
+<td>
+BLACK
+</td>
+<td align="right">
+88
+</td>
+</tr>
+<tr>
+<td align="right">
+3
+</td>
+<td align="right">
+5
+</td>
+<td>
+F
+</td>
+<td>
+YES
+</td>
+<td>
+HISPANIC
+</td>
+<td align="right">
+34
+</td>
+</tr>
+<tr>
+<td align="right">
+4
+</td>
+<td align="right">
+3
+</td>
+<td>
+M
+</td>
+<td>
+YES
+</td>
+<td>
+HISPANIC
+</td>
+<td align="right">
+65
+</td>
+</tr>
+<tr>
+<td align="right">
+5
+</td>
+<td align="right">
+8
+</td>
+<td>
+M
+</td>
+<td>
+YES
+</td>
+<td>
+WHITE
+</td>
+<td align="right">
+75
+</td>
+</tr>
+<tr>
+<td align="right">
+6
+</td>
+<td align="right">
+5
+</td>
+<td>
+M
+</td>
+<td>
+NO
+</td>
+<td>
+BLACK
+</td>
+<td align="right">
+74
+</td>
+</tr>
+<tr>
+<td align="right">
+7
+</td>
+<td align="right">
+8
+</td>
+<td>
+F
+</td>
+<td>
+YES
+</td>
+<td>
+HISPANIC
+</td>
+<td align="right">
+72
+</td>
+</tr>
+<tr>
+<td align="right">
+8
+</td>
+<td align="right">
+4
+</td>
+<td>
+M
+</td>
+<td>
+YES
+</td>
+<td>
+BLACK
+</td>
+<td align="right">
+79
+</td>
+</tr>
+<tr>
+<td align="right">
+9
+</td>
+<td align="right">
+6
+</td>
+<td>
+M
+</td>
+<td>
+NO
+</td>
+<td>
+WHITE
+</td>
+<td align="right">
+88
+</td>
+</tr>
+<tr>
+<td align="right">
+10
+</td>
+<td align="right">
+7
+</td>
+<td>
+M
+</td>
+<td>
+YES
+</td>
+<td>
+HISPANIC
+</td>
+<td align="right">
+87
+</td>
+</tr>
+</table>
+</div>
+<div id="tables-using-pander" class="section level3">
+<h3>Tables using <code>pander</code></h3>
+<p>The <code>pander</code> package can output various objects in pandoc:</p>
+<pre class="r"><code>library(pander)
+# You can change default pander options:
+panderOptions(&#39;table.alignment.default&#39;, function(df)
+  ifelse(sapply(df, is.numeric), &#39;right&#39;, &#39;left&#39;))
+panderOptions(&#39;table.split.table&#39;, Inf)
+panderOptions(&#39;big.mark&#39;, &quot;,&quot;)
+panderOptions(&#39;keep.trailing.zeros&#39;, TRUE)
+pander(head(iris))</code></pre>
+<table style="width:94%;">
+<colgroup>
+<col width="20%" />
+<col width="19%" />
+<col width="20%" />
+<col width="19%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Sepal.Length</th>
+<th align="right">Sepal.Width</th>
+<th align="right">Petal.Length</th>
+<th align="right">Petal.Width</th>
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">5.1</td>
+<td align="right">3.5</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.9</td>
+<td align="right">3.0</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.7</td>
+<td align="right">3.2</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.6</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.0</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.4</td>
+<td align="right">3.9</td>
+<td align="right">1.7</td>
+<td align="right">0.4</td>
+<td align="left">setosa</td>
+</tr>
+</tbody>
+</table>
+<p>There are many other packages to output well-formatted tables from R objects, like: <strong>stargazer</strong>, <strong>table1</strong>, <strong>tables</strong>, <strong>flextable</strong>, <strong>formattable</strong>, <strong>htmlTable</strong>, <strong>huxtable</strong>, <strong>kableExtra</strong>, <strong>pixiedust</strong>, <strong>tangram</strong>, <strong>texreg</strong>, <strong>ztable</strong>, etc.</p>
+</div>
+<div id="inline-r-expressions-and-special-chunks" class="section level3">
+<h3>Inline R expressions and special chunks</h3>
+<ul>
+<li><p>Inline R expression like 2, or R version 3.4.4 (2018-03-15).</p></li>
+<li><p>Rcpp code chunks can also be included in your document:</p></li>
+</ul>
+<pre class="cpp"><code>#include &lt;Rcpp.h&gt;
+
+// [[Rcpp::export]]
+int fibonacci(const int x) {
+    if (x == 0 || x == 1) return(x);
+    return (fibonacci(x - 1)) + fibonacci(x - 2);
+}</code></pre>
+<p>Because fibonacci was defined with the <code>Rcpp::export</code> attribute it can now be called as a normal R function:</p>
+<pre class="r"><code>fibonacci(10L)</code></pre>
+<pre class="chunk-output"><code>## [1] 55</code></pre>
+<pre class="r"><code>fibonacci(20L)</code></pre>
+<pre class="chunk-output"><code>## [1] 6765</code></pre>
+<ul>
+<li>An R chunk that is displayed, but not executed:</li>
+</ul>
+<pre class="r"><code>library(knitr)
+knit(&#39;R Markdown V2 Syntax.Rmd&#39;)</code></pre>
+<ul>
+<li>A Python chunk:</li>
+</ul>
+<pre class="python"><code>import sys
+print(sys.version)</code></pre>
+<pre class="chunk-output"><code>## 2.7.10 (default, Feb 22 2019, 21:17:52) 
+## [GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.37.14)]</code></pre>
+</div>
+</div>
+<div id="citations" class="section level2">
+<h2>Citations</h2>
+<p>Thanks to Pandoc, it is rather easy to insert citations in your text. First, you need to specify a bibliography file in a YAML section. A number of formats are supported, but to remain compatible with LaTeX, use BibTeX (<code>.bibtex</code>) or BibLaTeX (<code>.bib</code>) format only. Note that the <code>bibliography</code> folder, like for figures is two folders ahead in the relative path, i.e., <code>../../bibliography/&lt;my-file.bib&gt;</code>.</p>
+<p>The file we use here is named <code>bibliography.bib</code>. It is enough to refer to it in a YAML section. However, we will also add more reference to the bibliography later on. So, we first copy this file into <code>bibliography-full.bib</code> and then, we refer to the later file instead.</p>
+<ul>
+<li>A <code>references</code> field can also be included in a YAML section for self-contained bibliography (and you can use both at the same time!).</li>
+</ul>
+<ul>
+<li>The R package <code>knitcitations</code> uses pandoc citations, but enhances its mechanisms by allowing to add citations by DOIs or URL and by linking to cited papers directly. You need to start loading the package and clean up citations.</li>
+</ul>
+<p>You can use references citations contained in your bibliography inside square brackets, separated by semicolons and each citation must be composed using <code>@</code> + citation identifier. For instance <span class="citation">(Greenwade 1993; Fenner 2012)</span>, or <span class="citation">(see Fenner 2012, pp. 12–17; also Greenwade 1993, ch. 2)</span>. Use a minus sign before the reference to suppress mention of the author: as Greenwade <span class="citation">(1993)</span> indicated, “bla bla”. You can also write the inline citation this way: <span class="citation">Fenner (2012, p. 10)</span> says “bla”.</p>
+<p>Finally, you can include citations in the references without citing them by using a <code>nocite</code> entry in a YAML block:</p>
+<pre><code>---
+nocite:
+ | @item1, @item2
+---</code></pre>
+<p>By default, the Chicago author-date format is used by Pandoc, but you can use a different style by specifying a CSL 1.0 style in a <code>csl</code> metadata entry in a YAML block. The RStudio <a href="http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html">rmarkdown</a> site indicates two interesting pages to get CSL files: <a href="https://github.com/citation-style-language/styles">CSL official repository</a> and <a href="http://zotero.org/styles">Zotero styles page</a> that allows easy browsing. Here, we use the <strong>Marine Biology</strong> style.</p>
+<p>As already mentioned, an addition to this mechanism is provided by the <code>knitcitations</code> package that allows to build citations from DOIs, or URL into Pandoc-compatible citations. The question of independent <code>.bib</code> file, and/or need for an Internet link to compile the document is discussed here <a href="http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/" class="uri">http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/</a>.</p>
+<p>One big lack in this approach is no link between the citation and the reference.</p>
+<!-- Try also switching from marine-biology.csl to ecology.cls -->
+<p>Now for <code>knitcitations</code> citations… We can add a citation by DOI <span class="citation">(Abrams et al. 2012)</span>, or <span class="citation">Boettiger and Hastings (2013)</span>. Since a citation like <code>name_year</code> is automatically created, one do not need to recite the same items by DOI, but one can cite like this <span class="citation">(Abrams et al. 2012)</span>, which should be the same as <span class="citation">(Abrams et al. 2012)</span>. Finally, one can also cite R bibentry objects directly, like <span class="citation">(Xie 2014, 2015, 2019)</span>. All these approaches are combinable with traditional pandoc citations, providing these citations are already included in the <code>.bib</code> file.</p>
+<p>Finally, don’t forget to generate the complete <code>.bib</code> file by appending the following last R chunk into your document in order to add the <code>knitcitations</code> in your document properly:</p>
+<pre class="r"><code>write.bibtex(file = &quot;../../bibliography/bibliography-full.bib&quot;, append = TRUE)</code></pre>
+<p>Note how the references are included automatically at the end of the document. Do not forget to put an adequate header by yourself!</p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-Abrams_2012">
+<p>Abrams PA, Ruokolainen L, Shuter BJ, McCann KS (2012) Harvesting creates ecological traps: Consequences of invisible mortality risks in predatorprey metacommunities. Ecology 93:281–293. doi: <a href="https://doi.org/10.1890/11-0011.1">10.1890/11-0011.1</a></p>
+</div>
+<div id="ref-Boettiger_2013">
+<p>Boettiger C, Hastings A (2013) No early warning signals for stochastic transitions: Insights from large deviation theory. Proceedings of the Royal Society B: Biological Sciences 280:20131372–20131372. doi: <a href="https://doi.org/10.1098/rspb.2013.1372">10.1098/rspb.2013.1372</a></p>
+</div>
+<div id="ref-fenner2012a">
+<p>Fenner M (2012) One-click science marketing. Nature Materials 11:261–263. doi: <a href="https://doi.org/10.1038/nmat3283">10.1038/nmat3283</a></p>
+</div>
+<div id="ref-greenwade93">
+<p>Greenwade G (1993) The Comprehensive Tex Archive Network (CTAN). TUGBoat 14:342–351</p>
+</div>
+<div id="ref-Xie_2019">
+<p>Xie Y (2019) Knitr: A general-purpose package for dynamic report generation in r</p>
+</div>
+<div id="ref-Xie_2015">
+<p>Xie Y (2015) Dynamic documents with R and knitr, 2nd edn. Chapman; Hall/CRC, Boca Raton, Florida</p>
+</div>
+<div id="ref-Xie_2014">
+<p>Xie Y (2014) Knitr: A comprehensive tool for reproducible research in R. In: Stodden V, Leisch F, Peng RD (eds) Implementing reproducible computational research. Chapman; Hall/CRC</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>This is my simple footnote.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Footnotes can span on multiple paragraphs, providing you indent them with four spaces:</p>
+<ul>
+<li>A list item</li>
+</ul>
+<p>Another paragraph belonging to the note.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>Inline footnotes are easier to write right in your text, but they can only span on a single paragraph.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Note that you <strong>cannot</strong> include the number inside the link, unfortunately.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>Do <strong>not</strong> use underscore <code>_</code> in the label of your chunk to use it as a link!<a href="#fnref5" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="py-4 border-bottom mb-100">
+                    <div class="row">
+                        <div class="col-lg-5 mb-4 mb-lg-0">
+                            <!-- share-icon -->
+                            <div class="d-flex">
+                                <span class="font-weight-light mt-2 mr-3">Share:</span>
+                                <ul class="list-inline d-inline-block">
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="https://twitter.com/intent/tweet?text=SciViews%20New%20Site&amp;url=https%3a%2f%2fwww.sciviews.org%2fblog%2f2019-05-05-new-site%2f" target="_blank" rel="noopener">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.sciviews.org%2fblog%2f2019-05-05-new-site%2f" target="_blank" rel="noopener">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.sciviews.org%2fblog%2f2019-05-05-new-site%2f&amp;title=SciViews%20New%20Site" target="_blank" rel="noopener">
+                                            <i class="ti-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="mailto:?subject=SciViews%20New%20Site&amp;body=https%3a%2f%2fwww.sciviews.org%2fblog%2f2019-05-05-new-site%2f" target="_blank" rel="noopener">
+                                            <i class="ti-email"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- tags -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar -->
+<div class="col-lg-4">
+    <div class="bg-white px-4 py-100 sidebar-box-shadow">
+        <!-- categories -->
+        <div class="mb-50">
+            <h4 class="mb-3">Categories</h4>
+            <ul class="list-unstyled mb-0">
+                <li class="border-bottom">
+                    <a href="../../categories/article" class="d-block text-color py-10">Article</a>
+                </li>
+                <li class="border-bottom">
+                    <a href="../../categories/news" class="d-block text-color py-10">News</a>
+                </li>
+                <li class="border-bottom">
+                    <a href="../../categories/sciviews-box" class="d-block text-color py-10">Sciviews box</a>
+                </li>
+                <li class="border-bottom">
+                    <a href="../../categories/software" class="d-block text-color py-10">Software</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Widget Recent Post -->
+        <div class="mb-50">
+            <h4 class="mb-3">Recent News</h4>
+            
+            <!-- post -->
+            <div class="d-flex py-3 border-bottom">
+                <div class="mr-4">
+                    <a href="../../blog/2019-05-08-svbox2019/">
+                        <img class="rounded img-fluid recent-post-thumb" src="../../images/blog/svbox2019.png" alt="post-thumb">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-3">
+                        <a class="text-dark" href="../../blog/2019-05-08-svbox2019/">SciViews Box 2019</a>
+                    </h6>
+                    <p class="meta">08 May 2019</p>
+                </div>
+            </div>
+            
+            <!-- post -->
+            <div class="d-flex py-3 border-bottom">
+                <div class="mr-4">
+                    <a href="../../blog/2019-05-05-new-site/">
+                        <img class="rounded img-fluid recent-post-thumb" src="../../images/blog/website.png" alt="post-thumb">
+                    </a>
+                </div>
+                <div>
+                    <h6 class="mb-3">
+                        <a class="text-dark" href="../../blog/2019-05-05-new-site/">SciViews New Site</a>
+                    </h6>
+                    <p class="meta">05 May 2019</p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- tags -->
+        <div class="mb-50">
+            <h4 class="mb-3">Tags</h4>
+            <ul class="list-inline tag-list">
+                <li class="list-inline-item"><a href="../../tags/image-analysis">Image analysis</a></li>
+                <li class="list-inline-item"><a href="../../tags/julia">Julia</a></li>
+                <li class="list-inline-item"><a href="../../tags/jupyter">Jupyter</a></li>
+                <li class="list-inline-item"><a href="../../tags/machine-learning">Machine learning</a></li>
+                <li class="list-inline-item"><a href="../../tags/news">News</a></li>
+                <li class="list-inline-item"><a href="../../tags/plankton">Plankton</a></li>
+                <li class="list-inline-item"><a href="../../tags/python">Python</a></li>
+                <li class="list-inline-item"><a href="../../tags/r">R</a></li>
+                <li class="list-inline-item"><a href="../../tags/reproducible-research">Reproducible research</a></li>
+                <li class="list-inline-item"><a href="../../tags/rstudio">Rstudio</a></li>
+                <li class="list-inline-item"><a href="../../tags/tidyverse">Tidyverse</a></li>
+                <li class="list-inline-item"><a href="../../tags/tutorial">Tutorial</a></li>
+                <li class="list-inline-item"><a href="../../tags/virtual-machine">Virtual machine</a></li>
+            </ul>
+        </div>
+
+        
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /blog-single -->
+
+
+<!-- footer -->
+<footer class="bg-secondary">
+    <div class="py-100 border-bottom" style="border-color: #454547 !important">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="mb-5 mb-md-0 text-center text-md-left">
+                        <!-- logo -->
+                        <img class="mb-30" src="../../images/logo-footer.png" alt="logo">
+                        <p class="text-white mb-30"> We build software for reproducible research with R</p> 
+                        <!-- social icon -->
+                        <ul class="list-inline">
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://github.com/SciViews">
+                                    <i class="ti-github"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://twitter.com/PhilGrosjean">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                    <i class="ti-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer links -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h4 class="text-white mb-4">Related</h4>
+                    <ul class="footer-links">
+                        
+                        <li>
+                            <a href="http://econum.umons.ac.be">Our Lab</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://web.umons.ac.be/fs/en/">Our Faculty</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://web.umons.ac.be/complexys/en/">Complexys</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://web.umons.ac.be/infortech/en/">InforTech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://web.umons.ac.be/en/">UMONS</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- footer links -->
+                <div class="col-lg-2 col-md-4 col-6">
+                     <h4 class="text-white mb-4">Quick Link</h4>
+                    <ul class="footer-links">
+                        
+                        <li>
+                            <a href="../../software/svbox">SciViews Box</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../software/sciviews-r">SciViews::R</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../software/zooimage">Zoo/PhytoImage</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../blog">Blog</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../about">About</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- subscribe form -->
+                <div class="col-lg-3 col-md-12 offset-lg-1">
+                    <div class="mt-5 mt-lg-0 text-center text-md-left">
+                             <h4 class="mb-4 text-white">Contact Us</h4> 
+                             <p class="text-white mb-4">Need more info?<br/><a href="mailto:info@sciviews.org"><span class="text-primary">Leave us a mail...</span></a></p> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="pt-4 pb-3 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5">
+                    <p class="text-white text-center text-md-left">
+                        <span class="text-primary">SciViews</span> &copy; 2019 All Right Reserved</p> 
+                </div>
+                <div class="col-lg-6 col-md-7">
+                    <ul class="list-inline text-center text-md-right">
+                        
+                        <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+                            <a class="font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- back to top -->
+        <button class="back-to-top">
+            <i class="ti-angle-up"></i>
+        </button>
+    </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="../../plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="../../plugins/bootstrap/bootstrap.min.js"></script>
+<!-- magnific popup -->
+<script src="../../plugins/magnific-popup/jquery.magnific.popup.min.js"></script>
+<!-- slick slider -->
+<script src="../../plugins/slick/slick.min.js"></script>
+<!-- mixitup filter -->
+<script src="../../plugins/mixitup/mixitup.min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+<script src="../../plugins/google-map/gmap.js"></script>
+<!-- Syo Timer -->
+<script src="../../plugins/syotimer/jquery.syotimer.js"></script>
+<!-- aos -->
+<script src="../../plugins/aos/aos.js"></script>
+<!-- Main Script -->
+<script src="../../js/script.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-139912016-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>

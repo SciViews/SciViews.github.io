@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SciViews</title>
+    <link>/</link>
+    <description>Recent content on SciViews</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 08 May 2019 11:43:10 +0100</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SciViews Box 2019</title>
+      <link>/blog/2019-05-08-svbox2019/</link>
+      <pubDate>Wed, 08 May 2019 11:43:10 +0100</pubDate>
+      
+      <guid>/blog/2019-05-08-svbox2019/</guid>
+      <description>Version 2019 of the SciViews Box is in preparation…</description>
+    </item>
+    
+    <item>
+      <title>ECOS</title>
+      <link>/project/ecos/</link>
+      <pubDate>Tue, 07 May 2019 14:48:03 +0100</pubDate>
+      
+      <guid>/project/ecos/</guid>
+      <description>Ecological Study of Open Source Software In this project, we have studied software ecosystems with the same tools we use for biological ecosystems.</description>
+    </item>
+    
+    <item>
+      <title>SciViews New Site</title>
+      <link>/blog/2019-05-05-new-site/</link>
+      <pubDate>Sun, 05 May 2019 21:13:14 +0100</pubDate>
+      
+      <guid>/blog/2019-05-05-new-site/</guid>
+      <description>Abstract The SciViews web site is completely refactored.
+This page shows how posts are presented with the new skin.</description>
+    </item>
+    
+    <item>
+      <title>SciViews Box</title>
+      <link>/software/svbox/</link>
+      <pubDate>Sun, 05 May 2019 12:27:35 +0100</pubDate>
+      
+      <guid>/software/svbox/</guid>
+      <description>The SciViews Box, or svbox, is an easily installable software environment for reproducible data science with R, Python and Julia.</description>
+    </item>
+    
+    <item>
+      <title>SciViews::R</title>
+      <link>/software/sciviews-r/</link>
+      <pubDate>Sun, 05 May 2019 12:15:35 +0100</pubDate>
+      
+      <guid>/software/sciviews-r/</guid>
+      <description>An extension to the Tidyverse SciViews::R is an extension to the Tidyverse aiming to make R even more easy to use by everyone.</description>
+    </item>
+    
+    <item>
+      <title>Zoo/PhytoImage</title>
+      <link>/software/zooimage/</link>
+      <pubDate>Sun, 05 May 2019 12:04:02 +0100</pubDate>
+      
+      <guid>/software/zooimage/</guid>
+      <description>Zoo/PhytoImage analyzes plankton samples through image analysis and machine learning. Plankton images from various origins can be used.</description>
+    </item>
+    
+    <item>
+      <title>Philippe Grosjean</title>
+      <link>/team/philippe-grosjean/</link>
+      <pubDate>Sat, 04 May 2019 14:43:10 +0100</pubDate>
+      
+      <guid>/team/philippe-grosjean/</guid>
+      <description>Profile I am in charge of the conception and development of the various SciViews software. My contributions in term of documentation and especially, user support are more limited.</description>
+    </item>
+    
+    <item>
+      <title>Guyliann Engels</title>
+      <link>/team/guyliann-engels/</link>
+      <pubDate>Sat, 04 May 2019 14:42:51 +0100</pubDate>
+      
+      <guid>/team/guyliann-engels/</guid>
+      <description>Profile I spend most of my time in guidance for our students and scientists. I develop code or documentation whenever we need new features.</description>
+    </item>
+    
+  </channel>
+</rss>
