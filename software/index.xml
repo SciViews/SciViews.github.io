@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on SciViews</title>
@@ -36,7 +36,8 @@
       <pubDate>Sun, 05 May 2019 12:04:02 +0100</pubDate>
       
       <guid>/software/zooimage/</guid>
-      <description>Zoo/PhytoImage analyzes plankton samples through image analysis and machine learning. Plankton images from various origins can be used.</description>
+      <description>Zoo/PhytoImage analyzes plankton samples through image analysis and machine learning. Plankton images from various origins can be used.
+ Analyze your plankton through digitized images Plankton samples are traditionally collected with plankton nets and analyzed by taxonomists using a stereomicroscope and determination keys.</description>
     </item>
     
   </channel>

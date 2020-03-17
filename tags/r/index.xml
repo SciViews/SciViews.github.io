@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on SciViews</title>
@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 05 May 2019 12:27:35 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 08:32:35 +0100</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SciViews Box configuration</title>
+      <link>/svbox/config/</link>
+      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      
+      <guid>/svbox/config/</guid>
+      <description>Configuration of your SciViews Box should be done preferrably through its configuration dialog box that you got by clicking on the Sv icon at the top right.</description>
+    </item>
+    
+    <item>
+      <title>SciViews Box applications</title>
+      <link>/svbox/apps/</link>
+      <pubDate>Mon, 16 Mar 2020 15:55:35 +0100</pubDate>
+      
+      <guid>/svbox/apps/</guid>
+      <description>Additional applications for the SciViews Box can be easily installed from here (also accessible from the Apps button at the bottom of the SciViews Box Configuration panel).</description>
+    </item>
     
     <item>
       <title>SciViews Box</title>
