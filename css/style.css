@@ -2691,15 +2691,6 @@ blockquote p:last-child {
   font-family: "Open Sans", sans-serif;
 }
 
-.has-search {
-    /*padding-left: 2rem;
-    border-left: solid 1px;
-    border-color: #fff;*/
-/*    display: flex;
-    flex-direction: column;
-    align-items: flex-end; */
-    border-width: 0;
-}
 .form-control-global {
     padding-top: 0;
     padding-bottom: 0;
@@ -2709,8 +2700,6 @@ blockquote p:last-child {
 .form-control-feedback-global {
     position: absolute;
     top: 6px;
-    /*padding-top: 6px;
-    z-index: 99;*/
     display: block;
     width: 2.375rem;
     height: 2.375rem;
