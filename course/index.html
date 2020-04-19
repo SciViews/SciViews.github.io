@@ -41,6 +41,10 @@
     <!-- MathJax -->
     
 
+     <!-- Added to have same icons as svPkgdown (fa + ti) -->
+     <!-- Font Awesome icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous" />
 
     <!--Favicon-->
     <link rel="shortcut icon" href="../images/favicon.png " type="image/x-icon">
@@ -71,15 +75,21 @@
                         </li>
                         <li class="list-inline-item">
                              <a href="https:/github.com/SciViews">
-                                <i class="ti-github"></i>
                                 <span class="ml-2">github.com/SciViews</span> 
+                                &nbsp;<i class="fa fa-github"></i>&nbsp;
                             </a>
                         </li>
+                
                         <li class="list-inline-item">
-                            <a href="#" id="searchOpen">
-                                <i class="ti-search"></i> 
-                            </a>
-                        </li>
+                         
+                         <form action="https://www.google.com/search" class="navbar-form navbar-right search-form-global">
+<span class="fa fa-search form-control-feedback-global"></span>
+<input type="text" class="form-control-global search-form-input" name="q" id="q"
+            placeholder="Search..." required>
+<input type="hidden" name="sitesearch" value="https://www.sciviews.org" />
+                         </form>
+                         
+                       </li>
                     </ul>
                 </div>
             </div>

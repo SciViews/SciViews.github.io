@@ -44,6 +44,10 @@
     <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     
 
+     <!-- Added to have same icons as svPkgdown (fa + ti) -->
+     <!-- Font Awesome icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous" />
 
     <!--Favicon-->
     <link rel="shortcut icon" href="../../images/favicon.png " type="image/x-icon">
@@ -74,15 +78,21 @@
                         </li>
                         <li class="list-inline-item">
                              <a href="https:/github.com/SciViews">
-                                <i class="ti-github"></i>
                                 <span class="ml-2">github.com/SciViews</span> 
+                                &nbsp;<i class="fa fa-github"></i>&nbsp;
                             </a>
                         </li>
+                
                         <li class="list-inline-item">
-                            <a href="#" id="searchOpen">
-                                <i class="ti-search"></i> 
-                            </a>
-                        </li>
+                         
+                         <form action="https://www.google.com/search" class="navbar-form navbar-right search-form-global">
+<span class="fa fa-search form-control-feedback-global"></span>
+<input type="text" class="form-control-global search-form-input" name="q" id="q"
+            placeholder="Search..." required>
+<input type="hidden" name="sitesearch" value="https://www.sciviews.org" />
+                         </form>
+                         
+                       </li>
                     </ul>
                 </div>
             </div>
@@ -890,7 +900,7 @@ digits(tli.table)[c(2, 6)] &lt;- 0
 ## Choose one of these!
 print(tli.table, floating = FALSE, type = &quot;html&quot;)</code></pre>
 <!-- html table generated in R 3.6.2 by xtable 1.8-4 package -->
-<!-- Sun Apr 19 10:29:11 2020 -->
+<!-- Sun Apr 19 18:01:32 2020 -->
 <table border="1">
 <tr>
 <th>
@@ -1245,6 +1255,10 @@ print(sys.version)</code></pre>
 <pre class="chunk-output"><code>## 2.7.16 (default, Feb 29 2020, 01:55:37) 
 ## [GCC 4.2.1 Compatible Apple LLVM 11.0.3 (clang-1103.0.29.20) (-macos10.15-objc-</code></pre>
 </div>
+</div>
+<div id="icons" class="section level2">
+<h2>Icons</h2>
+<p>You have both the <a href="https://fontawesome.com/icons?d=gallery&amp;m=free">font awesome</a>, and the <a href="https://themify.me/themify-icons">themify</a> icons. You need to create an object of class “fa fa-xxxx”, or “ti-xxxx”, where “xxxx” is an icon in the collection. Here is an example from font awesome <span class="fa fa-chart-bar"></span>, and here is one from themify: <span class="ti-package"></span>. You can use these icons everywhere!</p>
 </div>
 <div id="citations" class="section level2">
 <h2>Citations</h2>
