@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on SciViews</title>
-    <link>/tags/news/</link>
+    <link>https://www.sciviews.org/tags/news/</link>
     <description>Recent content in News on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
     <lastBuildDate>Sun, 05 May 2019 21:13:14 +0100</lastBuildDate>
     
-	<atom:link href="/tags/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sciviews.org/tags/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SciViews New Site</title>
-      <link>/blog/2019-05-05-new-site/</link>
+      <link>https://www.sciviews.org/blog/2019-05-05-new-site/</link>
       <pubDate>Sun, 05 May 2019 21:13:14 +0100</pubDate>
       
-      <guid>/blog/2019-05-05-new-site/</guid>
+      <guid>https://www.sciviews.org/blog/2019-05-05-new-site/</guid>
       <description>Abstract The SciViews web site is completely refactored.
 This page shows how posts are presented with the new skin.</description>
     </item>

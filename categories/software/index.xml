@@ -2,67 +2,86 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on SciViews</title>
-    <link>/categories/software/</link>
+    <link>https://www.sciviews.org/categories/software/</link>
     <description>Recent content in Software on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 17 Mar 2020 08:32:35 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 19:21:12 +0100</lastBuildDate>
     
-	<atom:link href="/categories/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sciviews.org/categories/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>SciViews Box Help</title>
+      <link>https://www.sciviews.org/svbox/help/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
+      
+      <guid>https://www.sciviews.org/svbox/help/</guid>
+      <description>Help on installing and using your SciViews Box with further explanations for corner cases&amp;hellip;
+ TODO: content for this page!</description>
+    </item>
+    
+    <item>
+      <title>SciViews Box 2020 Applications</title>
+      <link>https://www.sciviews.org/svbox/apps2020/</link>
+      <pubDate>Sun, 07 Jun 2020 19:08:43 +0100</pubDate>
+      
+      <guid>https://www.sciviews.org/svbox/apps2020/</guid>
+      <description>SciViews Box 2020 Applications  For help on these applications, see here; To install the SciViews Box, click the button above.</description>
+    </item>
+    
+    <item>
       <title>SciViews Box Configuration</title>
-      <link>/svbox/config/</link>
+      <link>https://www.sciviews.org/svbox/config/</link>
       <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
       
-      <guid>/svbox/config/</guid>
+      <guid>https://www.sciviews.org/svbox/config/</guid>
       <description>Configuration of your SciViews Box should be done preferrably through its configuration dialog box that you got by clicking on the Sv icon at the top right.</description>
     </item>
     
     <item>
       <title>SciViews Box 2019 Applications</title>
-      <link>/svbox/apps2019/</link>
+      <link>https://www.sciviews.org/svbox/apps2019/</link>
       <pubDate>Mon, 16 Mar 2020 15:55:35 +0100</pubDate>
       
-      <guid>/svbox/apps2019/</guid>
+      <guid>https://www.sciviews.org/svbox/apps2019/</guid>
       <description>SciViews Box 2019 Applications  For help on these applications, see here; To install the SciViews Box, click the button above.</description>
     </item>
     
     <item>
       <title>SciViews Box Applications</title>
-      <link>/svbox/apps/</link>
+      <link>https://www.sciviews.org/svbox/apps/</link>
       <pubDate>Mon, 16 Mar 2020 15:55:35 +0100</pubDate>
       
-      <guid>/svbox/apps/</guid>
+      <guid>https://www.sciviews.org/svbox/apps/</guid>
       <description>Additional applications for the SciViews Box can be easily installed from here (also accessible from the Apps button at the bottom of the SciViews Box Configuration panel).</description>
     </item>
     
     <item>
       <title>SciViews Box</title>
-      <link>/software/svbox/</link>
+      <link>https://www.sciviews.org/software/svbox/</link>
       <pubDate>Sun, 05 May 2019 12:27:35 +0100</pubDate>
       
-      <guid>/software/svbox/</guid>
+      <guid>https://www.sciviews.org/software/svbox/</guid>
       <description>The SciViews Box, or svbox, is an easily installable software environment for reproducible data science with R, Python and Julia.</description>
     </item>
     
     <item>
       <title>SciViews::R</title>
-      <link>/software/sciviews-r/</link>
+      <link>https://www.sciviews.org/software/sciviews-r/</link>
       <pubDate>Sun, 05 May 2019 12:15:35 +0100</pubDate>
       
-      <guid>/software/sciviews-r/</guid>
+      <guid>https://www.sciviews.org/software/sciviews-r/</guid>
       <description>An extension to the Tidyverse SciViews::R is an extension to the Tidyverse aiming to make R even more easy to use by everyone.</description>
     </item>
     
     <item>
       <title>Zoo/PhytoImage</title>
-      <link>/software/zooimage/</link>
+      <link>https://www.sciviews.org/software/zooimage/</link>
       <pubDate>Sun, 05 May 2019 12:04:02 +0100</pubDate>
       
-      <guid>/software/zooimage/</guid>
+      <guid>https://www.sciviews.org/software/zooimage/</guid>
       <description>Zoo/PhytoImage analyzes plankton samples through image analysis and machine learning. Plankton images from various origins can be used.
  Analyze your plankton through digitized images Plankton samples are traditionally collected with plankton nets and analyzed by taxonomists using a stereomicroscope and determination keys.</description>
     </item>

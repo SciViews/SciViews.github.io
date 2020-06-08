@@ -2,139 +2,139 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on SciViews</title>
-    <link>/tags/</link>
+    <link>https://www.sciviews.org/tags/</link>
     <description>Recent content in Tags on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 17 Mar 2020 08:32:35 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 19:21:12 +0100</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sciviews.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Applications</title>
-      <link>/tags/applications/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/tags/applications/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/tags/applications/</guid>
+      <guid>https://www.sciviews.org/tags/applications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Julia</title>
-      <link>/tags/julia/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/tags/julia/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/tags/julia/</guid>
+      <guid>https://www.sciviews.org/tags/julia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jupyter</title>
-      <link>/tags/jupyter/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/tags/jupyter/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/tags/jupyter/</guid>
+      <guid>https://www.sciviews.org/tags/jupyter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/tags/python/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/tags/python/</guid>
+      <guid>https://www.sciviews.org/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/tags/r/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://www.sciviews.org/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reproducible Research</title>
-      <link>/tags/reproducible-research/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/tags/reproducible-research/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/tags/reproducible-research/</guid>
+      <guid>https://www.sciviews.org/tags/reproducible-research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RStudio</title>
-      <link>/tags/rstudio/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/tags/rstudio/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/tags/rstudio/</guid>
+      <guid>https://www.sciviews.org/tags/rstudio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Virtual Machine</title>
-      <link>/tags/virtual-machine/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/tags/virtual-machine/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/tags/virtual-machine/</guid>
+      <guid>https://www.sciviews.org/tags/virtual-machine/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>/tags/tutorial/</link>
+      <link>https://www.sciviews.org/tags/tutorial/</link>
       <pubDate>Wed, 08 May 2019 11:43:10 +0100</pubDate>
       
-      <guid>/tags/tutorial/</guid>
+      <guid>https://www.sciviews.org/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>News</title>
-      <link>/tags/news/</link>
+      <link>https://www.sciviews.org/tags/news/</link>
       <pubDate>Sun, 05 May 2019 21:13:14 +0100</pubDate>
       
-      <guid>/tags/news/</guid>
+      <guid>https://www.sciviews.org/tags/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidyverse</title>
-      <link>/tags/tidyverse/</link>
+      <link>https://www.sciviews.org/tags/tidyverse/</link>
       <pubDate>Sun, 05 May 2019 12:15:35 +0100</pubDate>
       
-      <guid>/tags/tidyverse/</guid>
+      <guid>https://www.sciviews.org/tags/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Image analysis</title>
-      <link>/tags/image-analysis/</link>
+      <link>https://www.sciviews.org/tags/image-analysis/</link>
       <pubDate>Sun, 05 May 2019 12:04:02 +0100</pubDate>
       
-      <guid>/tags/image-analysis/</guid>
+      <guid>https://www.sciviews.org/tags/image-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine learning</title>
-      <link>/tags/machine-learning/</link>
+      <link>https://www.sciviews.org/tags/machine-learning/</link>
       <pubDate>Sun, 05 May 2019 12:04:02 +0100</pubDate>
       
-      <guid>/tags/machine-learning/</guid>
+      <guid>https://www.sciviews.org/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plankton</title>
-      <link>/tags/plankton/</link>
+      <link>https://www.sciviews.org/tags/plankton/</link>
       <pubDate>Sun, 05 May 2019 12:04:02 +0100</pubDate>
       
-      <guid>/tags/plankton/</guid>
+      <guid>https://www.sciviews.org/tags/plankton/</guid>
       <description></description>
     </item>
     

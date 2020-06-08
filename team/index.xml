@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Our Team on SciViews</title>
-    <link>/team/</link>
+    <link>https://www.sciviews.org/team/</link>
     <description>Recent content in Our Team on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
     <lastBuildDate>Sat, 04 May 2019 18:19:33 +0100</lastBuildDate>
     
-	<atom:link href="/team/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sciviews.org/team/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Philippe Grosjean</title>
-      <link>/team/philippe-grosjean/</link>
+      <link>https://www.sciviews.org/team/philippe-grosjean/</link>
       <pubDate>Sat, 04 May 2019 14:43:10 +0100</pubDate>
       
-      <guid>/team/philippe-grosjean/</guid>
+      <guid>https://www.sciviews.org/team/philippe-grosjean/</guid>
       <description>Profile I am in charge of the conception and development of the various SciViews software. My contributions in term of documentation and especially, user support are more limited.</description>
     </item>
     
     <item>
       <title>Guyliann Engels</title>
-      <link>/team/guyliann-engels/</link>
+      <link>https://www.sciviews.org/team/guyliann-engels/</link>
       <pubDate>Sat, 04 May 2019 14:42:51 +0100</pubDate>
       
-      <guid>/team/guyliann-engels/</guid>
+      <guid>https://www.sciviews.org/team/guyliann-engels/</guid>
       <description>Profile I spend most of my time in guidance for our students and scientists. I develop code or documentation whenever we need new features.</description>
     </item>
     

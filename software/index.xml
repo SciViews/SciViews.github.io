@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on SciViews</title>
-    <link>/software/</link>
+    <link>https://www.sciviews.org/software/</link>
     <description>Recent content in Software on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
     <lastBuildDate>Sat, 04 May 2019 18:19:33 +0100</lastBuildDate>
     
-	<atom:link href="/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sciviews.org/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SciViews Box</title>
-      <link>/software/svbox/</link>
+      <link>https://www.sciviews.org/software/svbox/</link>
       <pubDate>Sun, 05 May 2019 12:27:35 +0100</pubDate>
       
-      <guid>/software/svbox/</guid>
+      <guid>https://www.sciviews.org/software/svbox/</guid>
       <description>The SciViews Box, or svbox, is an easily installable software environment for reproducible data science with R, Python and Julia.</description>
     </item>
     
     <item>
       <title>SciViews::R</title>
-      <link>/software/sciviews-r/</link>
+      <link>https://www.sciviews.org/software/sciviews-r/</link>
       <pubDate>Sun, 05 May 2019 12:15:35 +0100</pubDate>
       
-      <guid>/software/sciviews-r/</guid>
+      <guid>https://www.sciviews.org/software/sciviews-r/</guid>
       <description>An extension to the Tidyverse SciViews::R is an extension to the Tidyverse aiming to make R even more easy to use by everyone.</description>
     </item>
     
     <item>
       <title>Zoo/PhytoImage</title>
-      <link>/software/zooimage/</link>
+      <link>https://www.sciviews.org/software/zooimage/</link>
       <pubDate>Sun, 05 May 2019 12:04:02 +0100</pubDate>
       
-      <guid>/software/zooimage/</guid>
+      <guid>https://www.sciviews.org/software/zooimage/</guid>
       <description>Zoo/PhytoImage analyzes plankton samples through image analysis and machine learning. Plankton images from various origins can be used.
  Analyze your plankton through digitized images Plankton samples are traditionally collected with plankton nets and analyzed by taxonomists using a stereomicroscope and determination keys.</description>
     </item>

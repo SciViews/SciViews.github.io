@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on SciViews</title>
-    <link>/categories/</link>
+    <link>https://www.sciviews.org/categories/</link>
     <description>Recent content in Categories on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 17 Mar 2020 08:32:35 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 19:21:12 +0100</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sciviews.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SciViews Box</title>
-      <link>/categories/sciviews-box/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/categories/sciviews-box/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/categories/sciviews-box/</guid>
+      <guid>https://www.sciviews.org/categories/sciviews-box/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Software</title>
-      <link>/categories/software/</link>
-      <pubDate>Tue, 17 Mar 2020 08:32:35 +0100</pubDate>
+      <link>https://www.sciviews.org/categories/software/</link>
+      <pubDate>Sun, 07 Jun 2020 19:21:12 +0100</pubDate>
       
-      <guid>/categories/software/</guid>
+      <guid>https://www.sciviews.org/categories/software/</guid>
       <description></description>
     </item>
     
     <item>
       <title>News</title>
-      <link>/categories/news/</link>
+      <link>https://www.sciviews.org/categories/news/</link>
       <pubDate>Wed, 08 May 2019 11:43:10 +0100</pubDate>
       
-      <guid>/categories/news/</guid>
+      <guid>https://www.sciviews.org/categories/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Article</title>
-      <link>/categories/article/</link>
+      <link>https://www.sciviews.org/categories/article/</link>
       <pubDate>Sun, 05 May 2019 21:13:14 +0100</pubDate>
       
-      <guid>/categories/article/</guid>
+      <guid>https://www.sciviews.org/categories/article/</guid>
       <description></description>
     </item>
     

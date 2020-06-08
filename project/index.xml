@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Our Projects on SciViews</title>
-    <link>/project/</link>
+    <link>https://www.sciviews.org/project/</link>
     <description>Recent content in Our Projects on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
     <lastBuildDate>Tue, 07 May 2019 18:19:33 +0100</lastBuildDate>
     
-	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sciviews.org/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ECOS</title>
-      <link>/project/ecos/</link>
+      <link>https://www.sciviews.org/project/ecos/</link>
       <pubDate>Tue, 07 May 2019 14:48:03 +0100</pubDate>
       
-      <guid>/project/ecos/</guid>
+      <guid>https://www.sciviews.org/project/ecos/</guid>
       <description>Ecological Study of Open Source Software In this project, we have studied software ecosystems with the same tools we use for biological ecosystems.</description>
     </item>
     
