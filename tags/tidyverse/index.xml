@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tidyverse on SciViews</title>
-    <link>https://www.sciviews.org/tags/tidyverse/</link>
+    <link>/tags/tidyverse/</link>
     <description>Recent content in Tidyverse on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
     <lastBuildDate>Sun, 05 May 2019 12:15:35 +0100</lastBuildDate>
     
-	<atom:link href="https://www.sciviews.org/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SciViews::R</title>
-      <link>https://www.sciviews.org/software/sciviews-r/</link>
+      <link>/software/sciviews-r/</link>
       <pubDate>Sun, 05 May 2019 12:15:35 +0100</pubDate>
       
-      <guid>https://www.sciviews.org/software/sciviews-r/</guid>
+      <guid>/software/sciviews-r/</guid>
       <description>An extension to the Tidyverse SciViews::R is an extension to the Tidyverse aiming to make R even more easy to use by everyone.</description>
     </item>
     

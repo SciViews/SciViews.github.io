@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Course on SciViews</title>
-    <link>https://www.sciviews.org/course/</link>
+    <link>/course/</link>
     <description>Recent content in Course on SciViews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
     <lastBuildDate>Sat, 04 May 2019 08:19:40 +0100</lastBuildDate>
     
-	<atom:link href="https://www.sciviews.org/course/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/course/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
