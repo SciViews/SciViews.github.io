@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 07 Jun 2020 19:21:12 +0100</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 07 Jun 2020 19:21:12 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SciViews Box Help</title>
       <link>/svbox/help/</link>
@@ -84,15 +80,6 @@
       <guid>/blog/2019-05-05-new-site/</guid>
       <description>Abstract The SciViews web site is completely refactored.
 This page shows how posts are presented with the new skin.</description>
-    </item>
-    
-    <item>
-      <title>SciViews Box</title>
-      <link>/software/svbox/</link>
-      <pubDate>Sun, 05 May 2019 12:27:35 +0100</pubDate>
-      
-      <guid>/software/svbox/</guid>
-      <description>The SciViews Box, or svbox, is an easily installable software environment for reproducible data science with R, Python and Julia.</description>
     </item>
     
     <item>
