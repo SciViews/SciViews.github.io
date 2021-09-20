@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 07 Jun 2020 19:21:12 +0100</lastBuildDate><atom:link href="/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Sep 2021 09:40:32 +0100</lastBuildDate><atom:link href="/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SciViews Box</title>
+      <link>/software/svbox/</link>
+      <pubDate>Sun, 19 Sep 2021 09:40:32 +0100</pubDate>
+      
+      <guid>/software/svbox/</guid>
+      <description>The SciViews Box, or svbox, is an easily installable software environment for reproducible data science with R, Python and Julia.</description>
+    </item>
+    
+    <item>
+      <title>SciViews Box 2021 Applications</title>
+      <link>/svbox/apps2021/</link>
+      <pubDate>Sun, 19 Sep 2021 09:30:22 +0100</pubDate>
+      
+      <guid>/svbox/apps2021/</guid>
+      <description>SciViews Box 2021 Applications  For help on these applications, see here; To install the SciViews Box, click the button above.</description>
+    </item>
+    
     <item>
       <title>SciViews Box Help</title>
       <link>/svbox/help/</link>
